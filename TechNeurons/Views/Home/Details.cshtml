@@ -1,0 +1,97 @@
+﻿@model TechNeurons.Models.Employee
+
+@{
+    ViewBag.Title = "Details";
+}
+
+
+
+<div class="container">
+    <div class="card">
+        <div class="card-header text-center text-uppercase">
+            <strong>Employee Details</strong>
+        </div>
+        <div class="card-body">
+            <div class="row">
+                <div class="col-md-6">
+
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Id</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">@Html.DisplayFor(Model => Model.Id)</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Name</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">@Html.DisplayFor(Model => Model.name)</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Age</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">@Html.DisplayFor(Model => Model.age)</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Experience</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">@Html.DisplayFor(Model => Model.experience)</p>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-md-6">
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Department</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">@Html.DisplayFor(Model => Model.department)</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Gender</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">@Html.DisplayFor(Model => Model.gender)</p>
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-md-4">
+                            <p class="card-text text-uppercase"><strong>Address</strong></p>
+                        </div>
+                        <div class="col-md-8">
+                            <p class="card-text">@Html.DisplayFor(Model => Model.address)</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+
+
+        </div>
+        <div class="card-footer">
+
+            <div class="row mb-2 mt-2">
+                <div class="col-md-12 text-center">
+                    <a href="@Url.Action("Index","Home")" class="btn btn-info">Back To Employee List</a>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
